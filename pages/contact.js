@@ -1,15 +1,28 @@
+import { useState } from 'react';
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Layout from '../components/Layout'
+import useCopyToClipboard from '../components/CopyToClipboard';
 
 const title = "Get in touch"
 const subtitle = "I'm a software developer living in Cracow, Poland."
 
 export default function Contact() {
-  return (
+  const [value, copy] = useCopyToClipboard()
+  const [isShown, setIsShown] = useState(false);
 
+  const handleMouseOver = () => {
+    setIsShown(true);
+  }
+
+  const handleMouseOut = () => {
+    setIsShown(false);
+  }
+
+  return (
+<>
       <Layout title="Contact" description={`${title} - ${subtitle}`}>
         <div className="section section-main">
           <div className="left-content">
@@ -34,9 +47,17 @@ export default function Contact() {
                   </button>
               </div>
               <p>We are stronger when we listen, and smarter when we share.</p>
-              <h2 className="email">p.filipecki@blossom-is.online</h2>
+              <h2 
+                onClick={() => copy('p.filipecki@blossom-is.online')} 
+                className="email"
+                onMouseOver={handleMouseOver}
+                onMouseOut={handleMouseOut}
+                >p.filipecki@blossom-is.online</h2>
+              
           </div>
-      </div><div className="section section-1">
+          
+      </div>
+      <div className="section section-1">
               <span></span>
 
               <div className="content">
@@ -48,7 +69,18 @@ export default function Contact() {
                   </div>
               </div>
           </div>
+
           </Layout>
+          <div class={isShown ? 'illustration visible': 'illustration'}>
+            <div className="speechBubble">
+                <img src="images/speech.png" />
+                <p className=''>{value ? "Copied!" : "Click to copy!"}</p>
+            </div>
+            
+            <img className="illustrationImage" src="images/contactillustration.png" />
+          </div>
+          
+          </>
 
   )
 }

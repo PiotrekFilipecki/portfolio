@@ -32,6 +32,7 @@ body {
   background-color: #DBD6C8;
   //overflow: hidden;
   display: flex;
+  overflow-x: hidden;
   
   width: 100%;
   height: 100vh;
@@ -294,15 +295,17 @@ main {
   .bottom-content {
     margin-top: 3rem;
     h2 {
-
+      
 
       @media screen and (min-width: 990px) {
-        margin: -15% 0 0 0;
-        align-self: center;
+        // margin: -15% 0 0 0;
+        // align-self: center;
+        align-self: flex-end;
       }
     }
 
     p {
+      text-transform: uppercase;
       @media screen and (min-width: 990px) {
         padding-bottom: 2.5rem;        
       }
@@ -352,7 +355,7 @@ main {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 
   @media screen and (min-width: 990px) {
     flex-direction: row;
@@ -384,7 +387,7 @@ main {
     // position: absolute;
     // padding: 10vw;
     //width: 100%;
-    font-size: 3rem;
+    font-size: clamp(1.75rem, 4vw + 1rem, 3rem);
     left: 0;
     // color: white;
     color: #8c0000;
@@ -398,8 +401,8 @@ main {
     
 
     @media screen and (min-width: 990px) {
-      margin: -15% 0 0 0;
-      font-size: 124px;
+      // margin: -15% 0 0 0;
+      font-size: clamp(1.75rem, 4vw + 1rem, 4rem);
       order: 3;
     }
   }
@@ -818,6 +821,8 @@ main {
 
 .email {
   position: relative;
+  cursor: pointer;
+  margin: 0 0 2.5rem 0 !important;
   //overflow: hidden;
 
 
@@ -1140,3 +1145,66 @@ main {
   opacity: 0;
   transform: translateY(50px);
 }
+
+.illustration {
+  position: absolute;
+  right: 0vw;
+  overflow: hidden;
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+
+  top:0;
+
+  .speechBubble {
+    position: absolute;
+    bottom: 6rem;
+    left: 4rem;
+    width: 100%;
+    max-width: 160px;
+    height: 5rem;
+    max-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.25s ease-in-out;
+    transform: translate(-1rem, 1rem);
+    opacity: 0;
+    img{
+      display: block;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    p {
+      font-family: "PPNeueMontreal-Medium";
+      padding-top: 1rem;
+      z-index: 20;
+      color: #DBD6C8;
+  
+  
+    }
+  }
+
+
+
+  .illustrationImage {
+    width: 100%;
+    max-width: 250px;
+    transition: transform 0.15s ease-in-out;
+    transform: translateX(100%);
+  }
+
+  &.visible {
+    .illustrationImage {
+      transform: translateX(0%);
+    }
+
+    .speechBubble {
+      opacity: 1;
+      transform: translate(0rem, 0rem);
+    }
+  }
+}
+

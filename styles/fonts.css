@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "PPNeueMontreal-Medium";
+    src: url("/fonts/PPNeueMontreal-Medium.otf") format("woff2");
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "PPNeueMontreal-Bold";
+    src: url("/fonts/PPNeueMontreal-Bold.otf") format("woff2");
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "PPNeueMontreal-Book";
+    src: url("/fonts/PPNeueMontreal-Book.otf") format("woff2");
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "PPNeueMontreal-Thin";
+    src: url("/fonts/PPNeueMontreal-Thin.otf") format("woff2");
+    font-style: normal;
+  }

@@ -69,7 +69,7 @@ export default function Work() {
                 <img src="/images/projects/iam.png" />
               </div>
               <div className="project-content">
-                <h4 className="project-content_name">I'AM</h4>
+                <h4 className="project-content_name">I&apos;AM</h4>
                 <div className="project-content_details">
                   <span>Wordpress | ACF | gsap</span>
                   <p>Product website about app for prosthesis industry.</p>

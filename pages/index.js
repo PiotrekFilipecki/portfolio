@@ -90,7 +90,7 @@ export default function Home() {
           >
           <div className="content-paragraph">
             <p className="section1-up-paragraph">I am WEB TECHNOLOGIES and design PASSIONATE who LOVE WORKING AT THE INTERSECTION OF CREATIVITY AND USER FRIENDLY INTERFACES TO CREATE MEMORABLE WEB EXPERIENCES.</p>
-            <p className="section1-up-paragraph">During my 10 year web development journey I had opportunity to provide projects for companies like Samsung, Lay's, Colgate, Palmolive, Microsoft, Ferrero as well as various startups and small businesess.</p>
+            <p className="section1-up-paragraph">During my 10 year web development journey I had opportunity to provide projects for companies like Samsung, Lay&apos;s, Colgate, Palmolive, Microsoft, Ferrero as well as various startups and small businesess.</p>
             <p className="section1-up-paragraph">I believe that this experience combined with curiosity about entrepreneurship itself, led me to business awareness that brings essential value to services I offer.</p>
           </div>
           </motion.div>

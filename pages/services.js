@@ -33,7 +33,7 @@ export default function Services() {
                   </svg>
               </button>
           </div>
-          <p>DURING THE YEARS I'VE TRIED MANY THINGS IN WEB DEVELOPMENT FIELD. THAT'S WHY I AM ABLE TO PROVIDE PRODUCTS AND SERVICES LIKE:</p>
+          <p>DURING THE YEARS I&apos;VE TRIED MANY THINGS IN WEB DEVELOPMENT FIELD. THAT&apos;S WHY I AM ABLE TO PROVIDE PRODUCTS AND SERVICES LIKE:</p>
           <h2></h2>
         </div>
       </div>
@@ -62,8 +62,8 @@ export default function Services() {
               <h4>A blend of UI and product engineering.</h4>
             </div>
             <div className="content-paragraph-2_content">
-              <p>Design, good looking things, aesthetics, architecture and random signs of beauty in everyday life are the things that inspire me the most. That's why I am always looking for a way to transport values from things that I admire to projects I deliver.</p>
-              <p>I have strong belief that there are plenty ways to communicate valuable things - that's why I love to work on good looking projects where communication is led not only by content, images but animations and non obvious interactions too.</p>
+              <p>Design, good looking things, aesthetics, architecture and random signs of beauty in everyday life are the things that inspire me the most. That&apos;s why I am always looking for a way to transport values from things that I admire to projects I deliver.</p>
+              <p>I have strong belief that there are plenty ways to communicate valuable things - that&apos;s why I love to work on good looking projects where communication is led not only by content, images but animations and non obvious interactions too.</p>
             </div>
           </div>
         </div>

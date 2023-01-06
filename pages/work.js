@@ -206,10 +206,10 @@ export default function Work() {
         <p className="somemore">and some more</p>
         <Link className="hoverButton hoverButton-1" target="_blank" href='https://www.published-by.com/'>published by</Link>
         <Link className="hoverButton hoverButton-1" target="_blank" href='https://lukasiewicz.gov.pl/'>instytut łukasiewicza</Link>
-        <Link className="hoverButton hoverButton-1" target="_blank" href='https://Linkkademiamakijazu.pl/'>akademia makijażu</Link>
+        <Link className="hoverButton hoverButton-1" target="_blank" href='https://www.akademiamakijazu.pl/'>akademia makijażu</Link>
         <Link className="hoverButton hoverButton-1" target="_blank" href='https://dailygrind.pl/'>daily grind</Link>
+        <Link className="hoverButton hoverButton-1" target="_blank" href='https://gulgulkrakow.pl/'>gul gul</Link>
         <Link className="hoverButton hoverButton-1" target="_blank" href='https://surowa.com/'>surowa.com</Link>
-        <Link className="hoverButton hoverButton-1" target="_blank" href='https://jlporadnia.pl/'>JL Poradnia</Link>
         <Link className="hoverButton hoverButton-1" target="_blank" href='https://www.e-venus.pl/'>Venus</Link>
         <Link className="hoverButton hoverButton-1" target="_blank" href='https://hutawnetrz.flywheelsites.com/'>huta wnętrz</Link>
         <Link className="hoverButton hoverButton-1" target="_blank" href='https://www.colgatetalks.com/'>colgate talks</Link>
